@@ -1,4 +1,4 @@
-import {React,Button} from "react";
+import React from "react";
 import {
   MDBBadge,
   MDBBtn,
@@ -21,13 +21,13 @@ import "./index.css";
 
 export default function Task() {
   return (
-    <section className="gradient-custom-2 vh-100">
-      <MDBContainer className="py-5 h-100">
+    <section className="gradient-custom-2 mt-5 vh-100">
+      <MDBContainer className="py-5 mt-5 h-100">
         <MDBRow className="d-flex justify-content-center align-items-center">
           <MDBCol md="12" xl="10">
             <MDBCard className="mask-custom">
               <MDBCardBody className="p-4 text-white bg-info">
-                <div className="text-center pt-3 pb-2">
+                <div className="text-center mt-5 pt-3 pb-2">
                   <img
                     src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-todo-list/check1.webp"
                     alt="Check"
@@ -39,6 +39,7 @@ export default function Task() {
                   <MDBTableHead>
                     <tr>
                       <th scope="col">Team Member</th>
+                      <th scope="col">Project</th>
                       <th scope="col">Task</th>
                       <th scope="col">EntryDate</th>
                       <th scope="col">Hours</th>
@@ -56,13 +57,16 @@ export default function Task() {
                         <span className="ms-2">Alice Mayer</span>
                       </th>
                       <td className="align-middle">
-                        <span>Call Sam For payments</span>
+                        <span>ReactNativeVideo</span>
                       </td>
                       <td className="align-middle">
-                        <span>Call Sam For payments</span>
+                        <span>UI/UX design</span>
                       </td>
                       <td className="align-middle">
-                        <span>Call Sam For payments</span>
+                        <span>01/25/2023</span>
+                      </td>
+                      <td className="align-middle">
+                        <span>5 hours</span>
                       </td>
                       <td className="align-middle">
                         <MDBBtn className="me-1" color="success">
@@ -77,192 +81,60 @@ export default function Task() {
                       <th>
                         <img
                           src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
-                          alt="avatar 2"
+                          alt="avatar 1"
                           style={{ width: "45px", height: "auto" }}
                         />
-                        <span className="ms-2">Kate Moss</span>
+                        <span className="ms-2">Morgan Depai</span>
                       </th>
                       <td className="align-middle">
-                        <span>Make payment to Bluedart</span>
+                        <span>ReactNativeVideo</span>
                       </td>
                       <td className="align-middle">
-                        <h6 className="mb-0">
-                          <MDBBadge className="mx-2" color="success">
-                            Low priority
-                          </MDBBadge>
-                        </h6>
+                        <span>Frontend Page</span>
                       </td>
                       <td className="align-middle">
-                        <MDBTooltip
-                          tag="a"
-                          wrapperProps={{ href: "#!" }}
-                          title="Done"
-                        >
-                          <MDBIcon
-                            fas
-                            icon="check"
-                            color="success"
-                            size="lg"
-                            className="me-3"
-                          />
-                        </MDBTooltip>
-                        <MDBTooltip
-                          tag="a"
-                          wrapperProps={{ href: "#!" }}
-                          title="Remove"
-                        >
-                          <MDBIcon
-                            fas
-                            icon="trash-alt"
-                            color="warning"
-                            size="lg"
-                            className="me-3"
-                          />
-                        </MDBTooltip>
+                        <span>01/25/2023</span>
+                      </td>
+                      <td className="align-middle">
+                        <span>8 hours</span>
+                      </td>
+                      <td className="align-middle">
+                        <MDBBtn className="me-1" color="success">
+                          Success
+                        </MDBBtn>
+                        <MDBBtn className="me-1" color="warning">
+                          Warning
+                        </MDBBtn>
                       </td>
                     </tr>
                     <tr className="fw-normal">
                       <th>
                         <img
                           src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3-bg.webp"
-                          alt="avatar 3"
+                          alt="avatar 1"
                           style={{ width: "45px", height: "auto" }}
                         />
-                        <span className="ms-2">Danny McChain</span>
+                        <span className="ms-2">Yashah Collin</span>
                       </th>
                       <td className="align-middle">
-                        <span>Office rent</span>
+                        <span>ReactNativeVideo</span>
                       </td>
                       <td className="align-middle">
-                        <h6 className="mb-0">
-                          <MDBBadge className="mx-2" color="warning">
-                            Middle priority
-                          </MDBBadge>
-                        </h6>
+                        <span>API design</span>
                       </td>
                       <td className="align-middle">
-                        <MDBTooltip
-                          tag="a"
-                          wrapperProps={{ href: "#!" }}
-                          title="Done"
-                        >
-                          <MDBIcon
-                            fas
-                            icon="check"
-                            color="success"
-                            size="lg"
-                            className="me-3"
-                          />
-                        </MDBTooltip>
-                        <MDBTooltip
-                          tag="a"
-                          wrapperProps={{ href: "#!" }}
-                          title="Remove"
-                        >
-                          <MDBIcon
-                            fas
-                            icon="trash-alt"
-                            color="warning"
-                            size="lg"
-                            className="me-3"
-                          />
-                        </MDBTooltip>
-                      </td>
-                    </tr>
-                    <tr className="fw-normal">
-                      <th>
-                        <img
-                          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava5-bg.webp"
-                          alt="avatar 4"
-                          style={{ width: "45px", height: "auto" }}
-                        />
-                        <span className="ms-2">Alexa Chung</span>
-                      </th>
-                      <td className="align-middle">
-                        <span>Office grocery shopping</span>
+                        <span>01/25/2023</span>
                       </td>
                       <td className="align-middle">
-                        <h6 className="mb-0">
-                          <MDBBadge className="mx-2" color="danger">
-                            High priority
-                          </MDBBadge>
-                        </h6>
+                        <span>7 hours</span>
                       </td>
                       <td className="align-middle">
-                        <MDBTooltip
-                          tag="a"
-                          wrapperProps={{ href: "#!" }}
-                          title="Done"
-                        >
-                          <MDBIcon
-                            fas
-                            icon="check"
-                            color="success"
-                            size="lg"
-                            className="me-3"
-                          />
-                        </MDBTooltip>
-                        <MDBTooltip
-                          tag="a"
-                          wrapperProps={{ href: "#!" }}
-                          title="Remove"
-                        >
-                          <MDBIcon
-                            fas
-                            icon="trash-alt"
-                            color="warning"
-                            size="lg"
-                            className="me-3"
-                          />
-                        </MDBTooltip>
-                      </td>
-                    </tr>
-                    <tr className="fw-normal">
-                      <th className="border-0">
-                        <img
-                          src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava6-bg.webp"
-                          alt="avatar 5"
-                          style={{ width: "45px", height: "auto" }}
-                        />
-                        <span className="ms-2">Ben Smith</span>
-                      </th>
-                      <td className="border-0 align-middle">
-                        <span>Ask for Lunch to Clients</span>
-                      </td>
-                      <td className="border-0 align-middle">
-                        <h6 className="mb-0">
-                          <MDBBadge className="mx-2" color="success">
-                            Low priority
-                          </MDBBadge>
-                        </h6>
-                      </td>
-                      <td className="border-0 align-middle">
-                        <MDBTooltip
-                          tag="a"
-                          wrapperProps={{ href: "#!" }}
-                          title="Done"
-                        >
-                          <MDBIcon
-                            fas
-                            icon="check"
-                            color="success"
-                            size="lg"
-                            className="me-3"
-                          />
-                        </MDBTooltip>
-                        <MDBTooltip
-                          tag="a"
-                          wrapperProps={{ href: "#!" }}
-                          title="Remove"
-                        >
-                          <MDBIcon
-                            fas
-                            icon="trash-alt"
-                            color="warning"
-                            size="lg"
-                            className="me-3"
-                          />
-                        </MDBTooltip>
+                        <MDBBtn className="me-1" color="success">
+                          Success
+                        </MDBBtn>
+                        <MDBBtn className="me-1" color="warning">
+                          Warning
+                        </MDBBtn>
                       </td>
                     </tr>
                   </MDBTableBody>
