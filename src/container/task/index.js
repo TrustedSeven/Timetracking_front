@@ -79,7 +79,7 @@ export default function Task() {
                         <span>5 hours</span>
                       </td>
                       <td className="align-middle">
-                        <button className="custombutton">Edit</button>
+                        <button className="custombutton" onClick={callApi}>Edit</button>
                       </td>
                     </tr>
                     <tr className="fw-normal">
@@ -141,4 +141,10 @@ export default function Task() {
       </MDBContainer>
     </section>
   );
+}
+
+function callApi() {
+  fetch('http://localhost:3001/details', { method: 'GET' })
+      .then(data => data.json())
+      .then(json => alert(JSON.stringify(json)))
 }
